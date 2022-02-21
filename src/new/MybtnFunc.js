@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import ButtonClass from './Button_class'
 const Mybtn_css = {
     fontSize: '1.5rem',
     textAlign: 'center',
@@ -24,17 +23,15 @@ const BlockDiv = {
     top: '40%'
     
 }
- export const MybtnFunc = () =>{
+const MybtnFunc = () =>{
      const [show, setShow] = useState(false) 
      
     return (
         <>
         <button style={Mybtn_css} onClick={()=>setShow(!show)}>button for FunctionComponent</button> 
-         {/* <ButtonClass /> */}
         {
-           
            show?<><div style={BlockDiv} >
-            <p className="p1tag">style using functional component</p>
+            <h1 className="p1tag">style using functional component</h1>
             <p className="p2tag">this para using inline css</p>
             <p className="p3tag">this para using stylesheet</p>
              </div> </>: null
@@ -44,4 +41,4 @@ const BlockDiv = {
     )
 }
 
-// export const Mybtn_Class 
+export default MybtnFunc
